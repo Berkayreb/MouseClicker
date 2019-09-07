@@ -106,29 +106,7 @@ namespace MouseClick
             {
                 konumlar.Clear();
 
-                if (chkRandom.Checked)
-                {
-                    
-
-                    foreach(ListViewItem lvitem in lstBilgi.Items)
-                    {
-                        konumlar.Add(lvitem.Tag as Konum);
-
-                    }
-                    Random rnd1 = new Random();
-                    int sayi1 = rnd1.Next(37);
-                    int sayi2 = rnd1.Next(37);
-
-                    if (sayi1 == sayi2) { sayi2=(sayi1 / 2)+2; }
-
-                    konumlar.Remove(konumlar[sayi1]);
-                    konumlar.Remove(konumlar[sayi2]);
-                    runActionThread = new Thread(RunAction);
-                    runActionThread.Start();
-
-                }
-                else
-                {
+             
 
                     foreach (ListViewItem lvi in lstBilgi.Items)
                     {
@@ -138,7 +116,7 @@ namespace MouseClick
                     runActionThread = new Thread(RunAction);
                     runActionThread.Start();
 
-                }
+                
             }
         }
 
