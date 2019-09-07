@@ -2,4 +2,4 @@ MouseClick
 Auto simulation mouse click
 
 
-Seçilen konumlara sırayla auto click
+Mouse ile belirtilen konumlara sırayla auto click
