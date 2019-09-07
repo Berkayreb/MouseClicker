@@ -41,7 +41,6 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.chkRandom = new System.Windows.Forms.CheckBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nWait)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nMakro)).BeginInit();
@@ -153,17 +152,6 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // chkRandom
-            // 
-            this.chkRandom.AutoSize = true;
-            this.chkRandom.Location = new System.Drawing.Point(116, 42);
-            this.chkRandom.Name = "chkRandom";
-            this.chkRandom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chkRandom.Size = new System.Drawing.Size(68, 17);
-            this.chkRandom.TabIndex = 13;
-            this.chkRandom.Text = "Rastgele";
-            this.chkRandom.UseVisualStyleBackColor = true;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -173,7 +161,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 134);
-            this.Controls.Add(this.chkRandom);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnClear);
@@ -209,7 +196,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.CheckBox chkRandom;
         private System.Windows.Forms.Timer timer1;
     }
 }
